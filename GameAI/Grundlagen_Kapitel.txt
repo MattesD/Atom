@@ -1,0 +1,10 @@
+Grundlagen
+
+Ein Optimierungsproblem ist ein Problem, bei der ein möglichst geeigneter Lösungskandidat gesucht wird (Weicker, 2015).
+Dabei muss der Suchraum klar erfassbar sein, eine geeignete Bewertungsfunktion zur Bewertung der Lösungskandidaten und eine ebenso geeignete Vergleichsrelation zwischen den Lösungskandidaten gefunden werden (ebd.).
+Optimierungsprobleme sind nicht trivial, oft kann aber eine Lösung mittels einfacher Algorithmen gefunden werden, ebenso augenscheinliche optimale Lösungen.
+Diese Lösungen sind oft allerdings nicht als globale Optimums
+
+Evolutionäre Algorithmen (EA) sind aus der Kombination von in der Natur vorfindbaren Phänomenen, genauer der natürlichen Evolution, und der Rechenstärke von Computern entstanden (Weicker, 2015).
+Dabei werden die in der natürlichen Evolution auftretenden Mechanismen, wie Rekombination, Mutation und Selektion von am Computer ausführbaren Algorithmen simuliert (ebd.).
+EA eignen sich hervorragend zur Anwendung auf Optimierungsprobleme. Anders als andere Methoden zum lösen dieser Probleme (z.B. dynamische Programmierung), schaffen es EA häufig bessere Lösungen zu finden.

@@ -1,0 +1,17 @@
+\babel@toc {ngerman}{}
+\contentsline {chapter}{\numberline {1}Anwendung des Style-Pakets}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Einbinden des Pakets}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}\"{A}nderungen gegen\"{u}ber \texttt {book}}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Einbinden von Abbildungen}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Erstellen und Anpassen des Indexes}{3}{section.1.4}
+\contentsline {section}{\numberline {1.5}Internationalisierung}{4}{section.1.5}
+\contentsline {section}{\numberline {1.6}Einbetten s\"{a}mtlicher Schriften}{4}{section.1.6}
+\contentsline {chapter}{\numberline {2}Festlegungen der Abteilung}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Verzeichnisreihenfolge}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Zitate und Literaturreferenzen}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}Die offizielle Titelseite}{8}{section.2.3}
+\contentsline {chapter}{Glossar}{9}{section*.8}
+\contentsline {chapter}{Abk\"{u}rzungen}{11}{section*.9}
+\contentsline {chapter}{Abbildungen}{13}{section*.10}
+\contentsline {chapter}{Literatur}{15}{section*.12}
+\contentsline {chapter}{Index}{17}{section*.14}

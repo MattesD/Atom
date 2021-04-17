@@ -1,0 +1,16 @@
+Grundlagen
+
+Die erste Überlegung bei der Gestaltung eines intelligenten Agenten, welcher ein Tower Defense Spiel selbstständig spielt, ist, welche Verfahren man anwendet.
+Dabei sei zu beachten, dass das Tower Defense Genre als solches zwar genug Spieltiefe mitbringt, um diese Aufgabe nicht trivial zu gestalten, aber simpel genug ist, um innerhalb kurzer Zeit, Fortschritte bei der Gestaltung eines solchen Agenten zu erkennen.
+
+Anfänglich wurden dabei die Verfahren von evolutionären Algorithmen und neuronalen Netzwerken gegenüber gestellt. Dabei ging es darum herauszufinden, welcher der beiden Ansätze sich für die Zielerreichung besser eignet.
+
+Da wir einen intelligenten Agenten schaffen wollen, der das Tower Defense Spiel möglichst gut spielen, d.h. eine möglichst hohe Gegnerwelle erreichen soll, haben wir es hier mit einem Optimierungsproblem zu tun.
+Evolutionäre Algorithmen eignen sich für die Anwendung auf eine Vielzahl von Optimierungsverfahren (Vikhar, 2016).
+Für ein klassisches Optimierungsproblem bräuchten wir allerdings eine klar definierte Bewertungsfunktion, was der Kontext des Spieles, also die Umwelt, in der sich unser intelligenter Agent wiederfindet nicht hergibt.
+Die Umwelt des Spiels ist so komplex, sodass eine ideale Lösung womöglich gar nicht gefunden werden kann (Weicker, 2015).
+Der evolutionäre Algorithmus setzt genau an dieser Problematik an und bewertet die Güte eines Individuums anhand einer Fitnessfunktion (Weicker, 2015).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Die in diesem Projekt verwendeten Verfahren sind
