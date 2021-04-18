@@ -80,18 +80,16 @@ Department f. Informatik, Abt. Informationssysteme\newline
 Im Studienverlaufsplan der meisten Studierenden der Informatik bzw. der Wirtschaftsinformatik an der Universit"at Oldenburg stehen verpflichtend die Module \glqq Softwareprojekt\grqq{} f"ur Studierende des Fach-Bachelors und \glqq Projektgruppe\grqq{} f"ur Studierende des Fach-Masters. Beide Module zielen darauf ab, Studierenden die M"oglichkeit zu bieten eigenst"andig gro"se Softwareprojekte nach softwaretechnischen Kriterien zu planen, zu implementieren und zu dokumentieren. F"ur die Organisation der Projektgruppen in diesen Modulen stellt die Universit"at den Studierenden einige Tools aus der Atlassian-Suite zur Verf"ugung:
 
 \begin{itemize} \itemsep-0.1cm
-\item \textbf{Jira}\\ Jira ist ein Projektmanagement-Tool, welches das Dokumentieren und Organisieren von Aufgaben erm"oglicht. Im Kontext der Module wird es genutzt, um Anforderungen an das Produkt in Form von Userstories festzuhalten und die Arbeitszeit an den einzelnen Aufgaben zu dokumentieren. Dabei hat hat jedes Projektteam ein eigenens Projekt in Jira, also einen privaten, von anderen Teams meist nicht einsehbaren Bereich.
-\item \textbf{Confluence}\\ Confluence ist ein Tool, um projektbezogene Wikis zu erstellen. Dabei hat jedes Projektteam einen eigenen sogenannten Space in Confluence, der meist nicht von anderen Teams einsehbar ist.
-\item \textbf{Bitbucket}\\ Bitbucket ist das Atlassian-eigene Versionierungstool, welches auf Git basiert. Dabei beinhaltet Bitbucket alle g"angigen Funktionen von Git und stellt dar"uber hinaus noch eine nahtlose Integration zu Jira bereit. Dabei k"onnen aus Jira heraus Branches zu einer entsprechenden Aufgabe erstellt werden. Zum Mergen der Branches bietet Bitbucket au"serdem die M"oglichkeit sogenannte \glqq Pull Requests \grqq{} zu erstellen. Dabei tr"agt der Autor des Codes eines Branches andere Nutzer als \glqq Reviewer \grqq{} ein, welche den Code sichten und testen und schlussendlich ablehnen oder aktzeptieren. Endg"ultig akzeptierter Code kann anschlie"send gemerged werden.
-\item \textbf{Bamboo}\\ Bamboo ist Atlassians Build-Server Tool f"ur Continuous Integration und Deployment. Dabei testet Bamboo anhand von definierten Workflows den auf den Branches in Bitbucket liegenden Code, womit vermieden werden kann, fehlerhaften Code in Produktbranches zu integrieren.
+\item \textbf{Jira}\\ Jira ist ein Projektmanagement-Tool, welches das Dokumentieren und Organisieren von Aufgaben erm"oglicht. Im Kontext der Module wird es genutzt, um Anforderungen an das Produkt in Form von Userstories festzuhalten und die Arbeitszeit an den einzelnen Aufgaben zu dokumentieren. Dabei hat hat jedes Projektteam ein eigenens Projekt in Jira, also einen privaten, von anderen Teams meist nicht einsehbaren Bereich \cite{jiraDoc}.
+\item \textbf{Confluence}\\ Confluence ist ein Tool, um projektbezogene Wikis zu erstellen. Dabei hat jedes Projektteam einen eigenen sogenannten Space in Confluence, der meist nicht von anderen Teams einsehbar ist \cite{confluenceDoc}.
+\item \textbf{Bitbucket}\\ Bitbucket ist das Atlassian-eigene Versionierungstool, welches auf Git basiert \cite{chacon2014pro}. Dabei beinhaltet Bitbucket alle g"angigen Funktionen von Git und stellt dar"uber hinaus noch eine nahtlose Integration zu Jira bereit. Dabei k"onnen aus Jira heraus Branches zu einer entsprechenden Aufgabe erstellt werden. Zum Mergen der Branches bietet Bitbucket au"serdem die M"oglichkeit sogenannte \glqq Pull Requests \grqq{} zu erstellen. Dabei tr"agt der Autor des Codes eines Branches andere Nutzer als \glqq Reviewer \grqq{} ein, welche den Code sichten und testen und schlussendlich ablehnen oder aktzeptieren. Endg"ultig akzeptierter Code kann anschlie"send gemerged werden \cite{bitbucketDoc}.
+\item \textbf{Bamboo}\\ Bamboo ist Atlassians Build-Server Tool f"ur Continuous Integration und Deployment. Dabei testet Bamboo anhand von definierten Workflows den auf den Branches in Bitbucket liegenden Code, womit vermieden werden kann, fehlerhaften Code in Produktbranches zu integrieren \cite{bambooDoc}.
 \end{itemize}
 
 Im Zuge der Arbeit wird ein Plug-in f"ur das Projektmanagement-Tool Jira entwickelt. Das Plug-in soll es erm"oglichen Projekte schnell aufzusetzen, indem beispielsweise aus Stud.IP exportierte .csv-Dateien importiert werden, anhand welcher automatisch Nutzer, Gruppen und Projekte in Jira angelegt werden. Dar"uber hinaus soll es m"oglich sein, anzugeben welche zus"atzlichen Tools aus der Atlassian-Suite (Confluence, Bitbucket, Bamboo) f"ur das entsprechende Jira-Projekt eingebunden werden sollen. Anschlie"send werden Nutzer und Gruppen in Jira angelegt und von dort aus die anderen Systeme synchronisiert. Der bisherige Stand des Systems verlangt das manuelle Anlegen der meisten dieser Einstellungen.\\
 Die genauen Anforderungen und Details des Produktes werden als Teil der Bachelorarbeit erhoben und dokumentiert.\\
 Zur Zeit gibt es kein ver"offentlichtes Plug-in, welches genau diesen Nutzen bringt. Die Herausforderungen beim Entwickeln dieses Plug-ins werden einerseits darin liegen das Plug-in gem"a"s der Design-Richtlinien von Atlassian zu entwickeln und andererseits die geeigneten Schnittstellen zu den anderen Tools von Atlassian zu bedienen.\\
 Das Plug-in wird in Java geschrieben. Das Erstellen eines Jira Plug-in-Skelettes ist von Atlassian ausf"uhrlich dokumentiert. Der csv-Import muss sinnvoll verabeitet werden und die Java-API in Jira entsprechend genutzt werden, die Projekte zu erstellen. Anschlie"send sollen die entsprechenden Bereiche, Repositories usw. in den anderen Tools ebenfalls "uber geeignete Schnittstellen angelegt werden.
-
-
 % ----------------------------------------------------------------------------
 \section{Einzelaufgaben und angestrebte Ergebnisse}
 
@@ -216,15 +214,9 @@ Gutachter: \> \Erstgutacher{}, \Zweitgutachter\\
 % -----------------------------------------------------------------------------
 %               Literaturliste
 % -----------------------------------------------------------------------------
-
-\bibliographystyle{alphadin}
-\emph{Literatur: Auflistung der wichtigsten, bereits "`gelesenen"'
-Paper und B"ucher, nicht nur Manuals o. "a.}
+\addcontentsline{toc}{chapter}{Literatur}
 \bibliography{Lit}
-
-%\bibliographystyle{galphac}
-% \addcontentsline{toc}{chapter}{Literatur}
-%\bibliography{../BibTeX/literaturliste}
+\bibliographystyle{alphadin}
 
 % -----------------------------------------------------------------------------
 %               Unterschriften
